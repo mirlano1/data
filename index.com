@@ -17,7 +17,7 @@
         <button class="color-button" style="background-color: #9b59b6;">زر بنفسجي</button>
 
         <h2>نموذج التسجيل</h2>
-        <form action="https://formsubmit.co/your_email@example.com" method="POST" id="registrationForm"> <!-- استبدل your_email@example.com ببريدك الإلكتروني -->
+        <form action="https://formsubmit.co/mirlanalmardiny@gmail.com" method="POST" id="registrationForm"> <!-- استبدل your_email@example.com ببريدك الإلكتروني -->
             <input type="hidden" name="_captcha" value="false"> <!-- تعطيل كابتشا -->
             
             <label for="name">الاسم:</label>
