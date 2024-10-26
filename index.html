@@ -4,7 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع ملون</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .color-button {
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .color-button:hover {
+            opacity: 0.8;
+        }
+
+        #thankYouMessage {
+            display: none;
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,7 +63,7 @@
         <button class="color-button" style="background-color: #9b59b6;">زر بنفسجي</button>
 
         <h2>نموذج التسجيل</h2>
-        <form action="https://formsubmit.co/mirlanalmardiny@gmail.com" method="POST" id="registrationForm"> <!-- استبدل your_email@example.com ببريدك الإلكتروني -->
+        <form action="https://formsubmit.co/your_email@example.com" method="POST" id="registrationForm"> <!-- استبدل your_email@example.com ببريدك الإلكتروني -->
             <input type="hidden" name="_captcha" value="false"> <!-- تعطيل كابتشا -->
             
             <label for="name">الاسم:</label>
@@ -35,7 +81,7 @@
             <button type="submit">إرسال</button>
         </form>
 
-        <div id="thankYouMessage" style="display: none; margin-top: 20px; color: green;">
+        <div id="thankYouMessage">
             شكرًا لك! تم إرسال البيانات بنجاح.
         </div>
     </div>
